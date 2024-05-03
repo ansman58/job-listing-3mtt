@@ -22,7 +22,7 @@ const SelectedItem = (props: Props) => {
 
   return (
     <div className="bg-white p-6 flex justify-between items-center gap-8">
-      <div className="flex gap-4">
+      <div className="flex gap-4 flex-wrap">
         {props.filterLanguages?.map((language, index) => (
           <div
             key={index + language}

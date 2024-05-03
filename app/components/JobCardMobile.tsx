@@ -5,10 +5,23 @@ import { IJob } from "../types/job";
 
 interface Props {
   job: IJob;
+  setFilteredLanguages: React.Dispatch<React.SetStateAction<string[] | null>>;
 }
-const JobCardMobile = ({ job }: Props) => {
+const JobCardMobile = ({ job, setFilteredLanguages }: Props) => {
+  const selectLanguage = (item: string) => {
+    setFilteredLanguages((prevLanguages) => {
+      if (!prevLanguages) return [item];
+      if (prevLanguages.includes(item)) return prevLanguages;
+      return [...prevLanguages, item];
+    });
+  };
   return (
-    <div className="text-primary bg-white w-full font-medium text-fs15 p-5 border-l-primary relative hover:border-l-4 rounded-md shadow-lg">
+    <div
+      className={`${
+        job?.new && job?.featured ? "border-l-primary border-l-4" : ""
+      }
+    text-primary bg-white w-full font-medium text-fs15 p-5 relative rounded-md shadow-lg`}
+    >
       <Image
         src={job?.logo}
         alt="image"
@@ -46,6 +59,7 @@ const JobCardMobile = ({ job }: Props) => {
             <p
               key={index + item}
               className="bg-neutral1 px-2 py-1 rounded-md hover:text-white hover:bg-primary cursor-pointer"
+              onClick={() => selectLanguage(item)}
             >
               {item}
             </p>
