@@ -27,7 +27,7 @@ const JobCardMobile = ({ job, setFilteredLanguages }: Props) => {
         alt="image"
         width={40}
         height={40}
-        className="absolute -top-6"
+        className="absolute -top-6 rounded-[50%]"
       />
       <div className="">
         <div className="flex items-center gap-2 mb-1">

@@ -45,7 +45,7 @@ const JobCardsWrapper = () => {
         className="hidden xs:block w-full"
       />
       <Image src={BgImgMobile} alt="background" className="xs:hidden w-full" />
-      {!!filteredLanguages && (
+      {filteredLanguages && filteredLanguages?.length > 0 && (
         <div className="sticky top-0 z-10 shadow-lg">
           <SelectedItem
             filterLanguages={filteredLanguages}

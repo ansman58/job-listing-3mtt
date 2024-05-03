@@ -15,8 +15,6 @@ const JobCardDesktop = (props: Props) => {
       if (prevLanguages.includes(item)) return prevLanguages;
       return [...prevLanguages, item];
     });
-
- 
   };
 
   return (
@@ -29,7 +27,13 @@ const JobCardDesktop = (props: Props) => {
     >
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Image src={props.job?.logo} alt="image" width={100} height={100} />
+          <Image
+            src={props.job?.logo}
+            alt="image"
+            width={100}
+            height={100}
+            className="rounded-[50%]"
+          />
           <div>
             <div className="flex items-center gap-2 mb-2">
               <p className="font-bold">{props.job?.company}</p>
