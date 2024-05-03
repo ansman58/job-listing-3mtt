@@ -1,8 +1,20 @@
-[
+import PhotosnapLogo from "@/images/photosnap.svg"
+import ManageLogo from "@/images/manage.svg"
+import AccountLogo from "@/images/account.svg"
+import MyHomeLogo from "@/images/myhome.svg"
+import LoopstudiosLogo from "@/images/loop-studios.svg"
+import FaceItLogo from "@/images/faceit.svg"
+import ShortlyLogo from "@/images/shortly.svg"
+import InsureLogo from "@/images/insure.svg"
+import EyecamLogo from "@/images/eyecam-co.svg"
+import AirFilterLogo from "@/images/the-air-filter-company.svg"
+
+
+export const jobs = [
   {
     id: 1,
     company: "Photosnap",
-    logo: "./images/photosnap.svg",
+    logo: PhotosnapLogo,
     new: true,
     featured: true,
     position: "Senior Frontend Developer",
@@ -17,7 +29,7 @@
   {
     id: 2,
     company: "Manage",
-    logo: "./images/manage.svg",
+    logo: ManageLogo,
     new: true,
     featured: true,
     position: "Fullstack Developer",
@@ -32,7 +44,7 @@
   {
     id: 3,
     company: "Account",
-    logo: "./images/account.svg",
+    logo: AccountLogo,
     new: true,
     featured: false,
     position: "Junior Frontend Developer",
@@ -47,7 +59,7 @@
   {
     id: 4,
     company: "MyHome",
-    logo: "./images/myhome.svg",
+    logo: MyHomeLogo,
     new: false,
     featured: false,
     position: "Junior Frontend Developer",
@@ -62,7 +74,7 @@
   {
     id: 5,
     company: "Loop Studios",
-    logo: "./images/loop-studios.svg",
+    logo: LoopstudiosLogo,
     new: false,
     featured: false,
     position: "Software Engineer",
@@ -77,7 +89,7 @@
   {
     id: 6,
     company: "FaceIt",
-    logo: "./images/faceit.svg",
+    logo: FaceItLogo,
     new: false,
     featured: false,
     position: "Junior Backend Developer",
@@ -92,7 +104,7 @@
   {
     id: 7,
     company: "Shortly",
-    logo: "./images/shortly.svg",
+    logo: ShortlyLogo,
     new: false,
     featured: false,
     position: "Junior Developer",
@@ -107,7 +119,7 @@
   {
     id: 8,
     company: "Insure",
-    logo: "./images/insure.svg",
+    logo: InsureLogo,
     new: false,
     featured: false,
     position: "Junior Frontend Developer",
@@ -122,7 +134,7 @@
   {
     id: 9,
     company: "Eyecam Co.",
-    logo: "./images/eyecam-co.svg",
+    logo: EyecamLogo,
     new: false,
     featured: false,
     position: "Full Stack Engineer",
@@ -137,7 +149,7 @@
   {
     id: 10,
     company: "The Air Filter Company",
-    logo: "./images/the-air-filter-company.svg",
+    logo: AirFilterLogo,
     new: false,
     featured: false,
     position: "Front-end Dev",
